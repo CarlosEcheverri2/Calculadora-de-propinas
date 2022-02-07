@@ -1,0 +1,73 @@
+:root {
+  --VeryDarkCyan: hsl(183, 100%, 15%);
+  --DarkgrayishCyan: hsl(186, 14%, 43%);
+  --DarkGrayishCyan2: hsl(184, 14%, 56%);
+  --LightGrayishCyan: hsl(185, 41%, 84%);
+  --LightGrayishCyan2: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--LightGrayishCyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+}
+
+.tittle {
+  font-size: 20px;
+  color: var(--DarkgrayishCyan);
+  margin-top: 150px;
+}
+
+.contenedor {
+  margin-top: 80px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.calculadora {
+  padding: 40px 0px 0px 60px;
+  width: 500px;
+  height: 500px;
+  background-color: var(--White);
+}
+
+.informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: var(--White);
+}
+
+.pantalla {
+  width: 430px;
+  height: 430px;
+  background-color: var(--VeryDarkCyan);
+  border-radius: 30px;
+}
+
+.facturado {
+  color: var(--DarkgrayishCyan);
+  margin-bottom: 15px;
+}
+
+.valor {
+  width: 430px;
+  height: 40px;
+  background-color: var(--LightGrayishCyan2);
+  color: var(--DarkgrayishCyan);
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: end;
+}

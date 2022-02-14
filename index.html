@@ -8,35 +8,68 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <div class="tittle">
-    <b> SPLI <br>
-    TTER</b>
+    <b> S P L I <br>
+    T T E R</b>
   </div>
     <div class="contenedor">
       <div class="calculadora">
-        <p class="facturado"><b>Bill</b></p>
-        <input type="number" class="valor" placeholder="$">
+        <p class="facturado">Bill</p>
+        <input type="number" class="valor" placeholder="0">
         <p class="select">Select Tip %</p>
-        <table>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+        <div class="botonera">
+          <span class="botonera__boton">5%</span>
+          <span class="botonera__boton">10%</span>
+          <span class="botonera__boton">15%</span>
+          <span class="botonera__boton">25%</span>
+          <span class="botonera__boton">50%</span>
+          <input type="text" class="botonera__boton--imput" readonly placeholder="Custom">
+        </div>
+        <div class="info">
+          <span class="info__text">Number of People</span>
+          <span class="error">Can`t be zero</span>
+        </div>
+        <input type="number" class="personas" placeholder="0" max="10" min="0">
       </div>
       <div class="informacion">
         <div class="pantalla">
-          
+          <table class="tablaDatos">
+            <tr>
+              <td>
+                <span class="textoTitulo">
+                  Tip Amount
+                </span>
+                <br>
+                <span class="textoSubtitulo">
+                  /person
+                </span>
+              </td>
+              <td class="resultado">
+                <span id="AmountResult" >$0</span>
+              </td>
+            </tr>
+            <tr>
+              <td class=>
+                <span class="textoTitulo">
+                  Total
+                </span>
+                <br>
+                <span class="textoSubtitulo">
+                  /person
+                </span>
+              </td>
+              <td class="resultado">
+                <span id="TotalResultado"  >$0</span>
+              </td>
+            </tr>
+          </table>
+          <div class="resetear">
+            RESET
+          </div>
         </div>
       </div>
     </div>

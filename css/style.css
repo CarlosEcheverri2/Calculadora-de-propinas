@@ -1,4 +1,5 @@
 :root {
+  --strongCyan: hsl(172, 67%, 45%);
   --VeryDarkCyan: hsl(183, 100%, 15%);
   --DarkgrayishCyan: hsl(186, 14%, 43%);
   --DarkGrayishCyan2: hsl(184, 14%, 56%);
@@ -13,12 +14,13 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Space Mono", monospace;
+  font-weight: bold;
 }
 
 .tittle {
-  font-size: 20px;
+  font-size: 25px;
   color: var(--DarkgrayishCyan);
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .contenedor {
@@ -61,13 +63,138 @@ body {
 
 .valor {
   width: 430px;
-  height: 40px;
+  height: 50px;
   background-color: var(--LightGrayishCyan2);
-  color: var(--DarkgrayishCyan);
-  font-size: 20px;
+  color: var(--VeryDarkCyan);
+  font-size: 25px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: end;
+}
+
+.select {
+  color: var(--DarkgrayishCyan);
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.botonera {
+  display: grid;
+  grid-template-columns: repeat(3, 133px);
+  grid-template-rows: repeat(2, 52px);
+  grid-gap: 15px;
+}
+
+.botonera__boton {
+  background-color: var(--VeryDarkCyan);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.botonera__boton--imput {
+  border-radius: 4px;
+  text-align: end;
+  border: NONE;
+  background-color: var(--LightGrayishCyan2);
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.botonera__boton--imput::placeholder {
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  width: 425px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__text {
+  color: var(--DarkgrayishCyan);
+}
+
+.error {
+  color: var(--DarkGrayishCyan2);
+  display: none;
+}
+
+.botonera__boton:hover {
+  background-color: var(--strongCyan);
+  color: var(--VeryDarkCyan);
+}
+
+.personas {
+  width: 430px;
+  height: 50px;
+  background-color: var(--LightGrayishCyan2);
+  color: var(--VeryDarkCyan);
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: end;
+}
+
+.pantalla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tablaDatos {
+  margin-top: 10%;
+  height: 40%;
+  width: 80%;
+}
+
+.tablaDatos tr td {
+  width: 50%;
+  height: 50%;
+}
+
+.textoTitulo {
+  color: var(--White);
+}
+
+.textoSubtitulo {
+  color: var(--DarkgrayishCyan);
+}
+
+.resultado {
+  text-align: end;
+  font-size: 40px;
+  color: var(--strongCyan);
+}
+
+.resetear {
+  margin-bottom: 10%;
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--VeryDarkCyan);
+  background-color: var(--strongCyan);
+}
+
+.resetear:hover {
+  background-color: var(--LightGrayishCyan);
+  cursor: pointer;
 }

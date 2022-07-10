@@ -28,6 +28,7 @@ body {
   display: inline-block;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   border-radius: 30px;
   overflow: hidden;
   max-width: 1000px;
@@ -97,6 +98,10 @@ body {
   color: var(--White);
   font-size: 25px;
   cursor: pointer;
+}
+
+.botonera__boton-active{
+  background-color: var(--strongCyan);
 }
 
 .botonera__boton--imput {
@@ -198,3 +203,54 @@ body {
   background-color: var(--LightGrayishCyan);
   cursor: pointer;
 }
+
+@media (max-width: 999px) {
+
+  .tittle {
+    margin-top: 50px;
+  }
+
+  .contenedor {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .botonera {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(3, 52px);
+    grid-gap: 15px;
+  }
+
+  .calculadora {
+    border-radius: 10px 10px 0px 0px;
+    width: 480px;
+    height: 500px;
+    background-color: var(--White);
+  }
+
+  .informacion{
+    border-radius: 0px 0px 10px 10px ;
+    width: 480px;
+    height: 380px;
+  }
+
+  .select {
+    margin-top: 15px;
+  }
+
+  .valor {
+    width: 360px;
+  }
+
+  .personas {
+    width: 360px;
+  }
+
+  .pantalla{
+    width: 380px;
+    height: 300px;
+  }
+}
+

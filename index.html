@@ -22,18 +22,18 @@
         <input type="number" class="valor" placeholder="0">
         <p class="select">Select Tip %</p>
         <div class="botonera">
-          <span class="botonera__boton">5%</span>
-          <span class="botonera__boton">10%</span>
-          <span class="botonera__boton">15%</span>
-          <span class="botonera__boton">25%</span>
-          <span class="botonera__boton">50%</span>
+          <span class="botonera__boton" data-tip="5" >5%</span>
+          <span class="botonera__boton" data-tip="10">10%</span>
+          <span class="botonera__boton" data-tip="15">15%</span>
+          <span class="botonera__boton" data-tip="25">25%</span>
+          <span class="botonera__boton" data-tip="50">50%</span>
           <input type="text" class="botonera__boton--imput" readonly placeholder="Custom">
         </div>
         <div class="info">
           <span class="info__text">Number of People</span>
           <span class="error">Can`t be zero</span>
         </div>
-        <input type="number" class="personas" placeholder="0" max="10" min="0">
+        <input type="number" class="personas" placeholder="0" max="10" min="1" pattern="^[0-9]+">
       </div>
       <div class="informacion">
         <div class="pantalla">
@@ -49,7 +49,7 @@
                 </span>
               </td>
               <td class="resultado">
-                <span id="AmountResult" >$0</span>
+                <span class="amountResult" >$0</span>
               </td>
             </tr>
             <tr>
@@ -63,7 +63,7 @@
                 </span>
               </td>
               <td class="resultado">
-                <span id="TotalResultado"  >$0</span>
+                <span class="totalResultado"  >$0</span>
               </td>
             </tr>
           </table>
